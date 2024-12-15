@@ -1,0 +1,42 @@
+package afnan;
+inteface resizable{
+    void resizeWidth(int Width);
+    void resizeHeight(int Height);
+}
+class Rectangle implements resizable{
+    
+    private int Width;
+    private int Height;
+}    
+    public Rectangle(int Width,int Height){
+    this.Width=Width;
+    this.Height=Height;
+
+public void resizeWidth(int newWidth){
+    Width=newWidth;
+}
+public void resizeHeight(int newHeight){
+    Height=newHeight;
+}
+public void display{
+    system.out.println("rectangle Width:"+ Width);
+    system.out.println("rectangle Height:" +Height);
+}
+    
+
+}
+class testresize{
+    public static void main(String[]args){
+    Rectangle rectangle=new Rectangle(15,10);
+    
+    system.out.println("original Rectangle");
+    rectangle.display();
+    
+    rectangle.resizeWidth(7);
+    rectangle.resizeHeight(15);
+    
+    system.out.println("resized Rectangle");
+    rectangle.display();
+    
+}
+}
