@@ -1,0 +1,24 @@
+interface Icallback{
+    void callme(int param){
+        
+    }
+}
+class client extends Icallback{
+    void callme(int p){
+         system.out.println("Icallback called with"+p);
+    }
+    
+}
+void test()
+{
+    system.out.println("original method");
+
+}
+void testIface()
+{
+    public static void main(String[]args){
+        Icallback.c=new client[];
+        c.callback(42);
+    }
+    
+}

@@ -1,0 +1,30 @@
+package mypack;
+class circle{
+    double s;
+    void area(){
+        system.out.println("the area of circle="+(3.14*s*s));
+    }
+}
+class square{
+    double r;
+    void area(){
+        sysytem.out.println("area of the square="+(s*s));
+        
+    }
+}
+class rectangle{
+    double l,b;
+    void area(){
+        system.out.println("area of the rectangle="+(l*b));
+        
+    }
+    
+}
+import mypack.circle;
+class eg{
+    public static void main(String[]args){
+         circle c=new circle();
+         c.area();
+    
+    }
+}
