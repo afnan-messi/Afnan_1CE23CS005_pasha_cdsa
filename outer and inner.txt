@@ -1,0 +1,25 @@
+package afnan;
+class outer{
+    String so=("this is an outer class");
+    void display(){
+        system.out.println(so)
+    }
+    void test(){
+        inner obj2=new inner();
+        obj2 display();
+    }
+    class inner{
+        String si=("this is an inner class");
+        void display(){
+            system.out.println(si);
+            
+        }
+    }
+}
+class innerclass demo{
+    public static void main(String[]args){
+        outer obj1=new outer();
+        obj1 display();
+        obj test();
+    }
+}
